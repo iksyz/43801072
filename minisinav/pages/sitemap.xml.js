@@ -1,5 +1,7 @@
 // pages/sitemap.xml.js
 
+export const runtime = 'edge';
+
 const getSiteUrl = (req) => {
     const envUrl = process.env.NEXT_PUBLIC_SITE_URL;
     if (envUrl) return envUrl.replace(/\/$/, '');
